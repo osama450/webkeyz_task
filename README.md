@@ -60,7 +60,7 @@ This will execute all the unit tests in the `test` directory.
 Include screenshots of your project here to provide a visual representation of the app's UI.
 
 
-![Screenshot_1687042358](https://github.com/osama450/webkeyz_task/assets/71011907/6d9b9796-ab15-4509-901a-2074261b071c) | ![Screenshot_1687042362](https://github.com/osama450/webkeyz_task/assets/71011907/d4b13566-7151-46f8-bf8a-5df8bf929fb8)
+[](https://github.com/osama450/webkeyz_task/assets/71011907/6d9b9796-ab15-4509-901a-2074261b071c) | [](https://github.com/osama450/webkeyz_task/assets/71011907/d4b13566-7151-46f8-bf8a-5df8bf929fb8)
 
 
  
