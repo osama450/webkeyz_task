@@ -59,8 +59,6 @@ This will execute all the unit tests in the `test` directory.
 
 Include screenshots of your project here to provide a visual representation of the app's UI.
 
-![Screenshot 1](screenshots/screenshot1.png)
-_Caption for screenshot 1._
+![Screenshot_1687042358](https://github.com/osama450/webkeyz_task/assets/71011907/6d9b9796-ab15-4509-901a-2074261b071c)
 
-![Screenshot 2](screenshots/screenshot2.png)
-_Caption for screenshot 2._
+![Screenshot_1687042362](https://github.com/osama450/webkeyz_task/assets/71011907/d4b13566-7151-46f8-bf8a-5df8bf929fb8)
