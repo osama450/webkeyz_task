@@ -1,16 +1,38 @@
-# webkeyz_task
-
-A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a Flutter project that [provide a brief description of the app's purpose or functionality].
 
-A few resources to get you started if this is your first Flutter project:
+## Configuration
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Before running the app, make sure you have Flutter SDK installed on your machine. If you haven't installed Flutter yet, please follow the official Flutter installation guide: [Flutter Installation](https://flutter.dev/docs/get-started/install)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone this repository or download the source code.
+
+2. Navigate to the project directory.
+
+3. Fetch the dependencies.
+
+4. Connect a physical device or start an emulator.
+
+## Running the App
+
+To run the app, follow these steps:
+
+1. Make sure you have a device connected or an emulator running.
+
+2. Launch the app.
+
+This will build and run the app on your connected device or emulator. You should see the app running on the screen.
+
+## Testing
+
+We have included unit tests and integration tests for this Flutter project. To run the tests, follow these steps:
+
+1. Navigate to the project directory if you're not already there.
+
+2. Go to test folder.
+
+3. Run the test.
+
+This will execute all the unit tests in the `test` directory.

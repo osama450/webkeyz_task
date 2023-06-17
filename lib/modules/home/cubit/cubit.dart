@@ -29,9 +29,9 @@ class HomeCubit extends Cubit<HomeStates> {
     );
   }
 
-  void addToCart() async {
+  Future addToCart() async {
     safeEmit(AddToCartLoadingState());
-    await Future.delayed(const Duration(seconds: 1), () {
+    await Future.delayed(const Duration(milliseconds: 600), () {
       cartCount++;
       safeEmit(AddToCartLoadedState());
     });

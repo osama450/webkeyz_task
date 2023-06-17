@@ -74,32 +74,35 @@ class _CartComponentState extends State<CartComponent> {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: SizedBox(
-                  width: 40.w,
-                  child: Stack(
-                    children: [
-                      Align(
-                        alignment: Alignment.topCenter,
-                        child: CircleAvatar(
-                          radius: 25.r,
-                          backgroundColor: Colors.black,
-                          child: Assets.icons.iconShoppingBag.svg(
-                            width: 24.w,
-                            height: 24.h,
+              Padding(
+                padding: const EdgeInsets.only(top: 5),
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: SizedBox(
+                    width: 40.w,
+                    child: Stack(
+                      children: [
+                        Align(
+                          alignment: Alignment.topCenter,
+                          child: CircleAvatar(
+                            radius: 25.r,
+                            backgroundColor: Colors.black,
+                            child: Assets.icons.iconShoppingBag.svg(
+                              width: 24.w,
+                              height: 24.h,
+                            ),
                           ),
                         ),
-                      ),
-                      const Positioned(
-                        top: 0,
-                        right: 3,
-                        child: CircleAvatar(
-                          backgroundColor: AppColors.secondaryPrimary,
-                          radius: 4,
-                        ),
-                      )
-                    ],
+                        const Positioned(
+                          top: 0,
+                          right: 3,
+                          child: CircleAvatar(
+                            backgroundColor: AppColors.secondaryPrimary,
+                            radius: 4,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),

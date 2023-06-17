@@ -15,37 +15,40 @@ class OffersProductComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Text(
-              'Cookies',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 40.sp,
-                fontWeight: FontWeight.w300,
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 24.w),
+          child: Row(
+            children: [
+              Text(
+                'Cookies',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40.sp,
+                  fontWeight: FontWeight.w300,
+                ),
               ),
-            ),
-            const Spacer(),
-            InkWell(
-              onTap: () {},
-              child: Row(
-                children: [
-                  Text(
-                    'See More',
-                    style: TextStyle(
-                      color: AppColors.secondaryPrimary,
-                      fontSize: 12.sp,
-                      fontWeight: FontWeight.w600,
+              const Spacer(),
+              InkWell(
+                onTap: () {},
+                child: Row(
+                  children: [
+                    Text(
+                      'See More',
+                      style: TextStyle(
+                        color: AppColors.secondaryPrimary,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10.w,
-                  ),
-                  Assets.icons.rightArrow.svg(),
-                ],
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    Assets.icons.rightArrow.svg(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         SizedBox(
           height: 35.h,
@@ -55,6 +58,7 @@ class OffersProductComponent extends StatelessWidget {
           width: double.infinity,
           child: ListView.separated(
             physics: const BouncingScrollPhysics(),
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return SizedBox(

@@ -42,7 +42,6 @@ class HomeScreen extends StatelessWidget {
                   : SafeArea(
                       child: Padding(
                         padding: EdgeInsets.symmetric(
-                          horizontal: 24.w,
                           vertical: 14.h,
                         ),
                         child: SingleChildScrollView(
@@ -50,22 +49,28 @@ class HomeScreen extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Row(
-                                children: const [
-                                  UserInfoComponent(),
-                                  Spacer(),
-                                  CartComponent(),
-                                ],
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 24.w),
+                                child: Row(
+                                  children: const [
+                                    UserInfoComponent(),
+                                    Spacer(),
+                                    CartComponent(),
+                                  ],
+                                ),
                               ),
                               SizedBox(
                                 height: 16.h,
                               ),
-                              Text(
-                                'Cookies',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 40.sp,
-                                  fontWeight: FontWeight.w300,
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 24.w),
+                                child: Text(
+                                  'Cookies',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 40.sp,
+                                    fontWeight: FontWeight.w300,
+                                  ),
                                 ),
                               ),
                               PremiumProductComponent(

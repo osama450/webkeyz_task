@@ -17,37 +17,40 @@ class PremiumProductComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Text(
-              'Premium',
-              style: TextStyle(
-                color: AppColors.secondaryPrimary,
-                fontSize: 28.sp,
-                fontWeight: FontWeight.w300,
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 24.w),
+          child: Row(
+            children: [
+              Text(
+                'Premium',
+                style: TextStyle(
+                  color: AppColors.secondaryPrimary,
+                  fontSize: 28.sp,
+                  fontWeight: FontWeight.w300,
+                ),
               ),
-            ),
-            const Spacer(),
-            InkWell(
-              onTap: () {},
-              child: Row(
-                children: [
-                  Text(
-                    'See More',
-                    style: TextStyle(
-                      color: AppColors.secondaryPrimary,
-                      fontSize: 12.sp,
-                      fontWeight: FontWeight.w600,
+              const Spacer(),
+              InkWell(
+                onTap: () {},
+                child: Row(
+                  children: [
+                    Text(
+                      'See More',
+                      style: TextStyle(
+                        color: AppColors.secondaryPrimary,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10.w,
-                  ),
-                  Assets.icons.rightArrow.svg(),
-                ],
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    Assets.icons.rightArrow.svg(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         SizedBox(
           height: 35.h,
@@ -56,6 +59,7 @@ class PremiumProductComponent extends StatelessWidget {
           height: 300.h,
           width: double.infinity,
           child: ListView.separated(
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
             physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
@@ -126,11 +130,14 @@ class PremiumProductComponent extends StatelessWidget {
                         ),
                       ),
                     ),
-                    FadeInDown(
-                      child: Align(
-                        alignment: Alignment.topCenter,
-                        child: Image.asset(
-                          products[index].image!,
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.h),
+                      child: FadeInDown(
+                        child: Align(
+                          alignment: Alignment.topCenter,
+                          child: Image.asset(
+                            products[index].image!,
+                          ),
                         ),
                       ),
                     ),

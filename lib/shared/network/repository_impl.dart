@@ -6,11 +6,10 @@ import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:webkeyz_task/models/response/product_model.dart';
 import 'package:webkeyz_task/shared/constants.dart';
 import 'package:webkeyz_task/shared/network/dio/dio_helper.dart';
-import 'package:webkeyz_task/shared/network/remote/api_endpoints.dart';
 import 'package:webkeyz_task/shared/network/repository.dart';
 
 class RepoImpl extends Repository {
-  final DioHelper dioHelper;
+  final DioHelper? dioHelper;
   final cacheOptions = CacheOptions(
     store: MemCacheStore(),
     policy: CachePolicy.refreshForceCache,
