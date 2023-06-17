@@ -1,11 +1,7 @@
 
-## Getting Started
-
-This is a Flutter project that [provide a brief description of the app's purpose or functionality].
-
 ## Configuration
 
-This is a Flutter project that [provide a brief description of the app's purpose or functionality].
+This is a Flutter project for webkeyz task.
 
 ## Getting Started
 
