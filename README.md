@@ -59,8 +59,6 @@ This will execute all the unit tests in the `test` directory.
 
 Include screenshots of your project here to provide a visual representation of the app's UI.
 
-![Screenshot 1](screenshots/screenshot1.png)
-_Caption for screenshot 1._
+<img src="screenshots/Screenshot_1687042358.png" width="250"> <img src="screenshots/Screenshot_1687042362.png" width="250">
+ 
 
-![Screenshot 2](screenshots/screenshot2.png)
-_Caption for screenshot 2._
