@@ -131,7 +131,7 @@ class PremiumProductComponent extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: 20.h),
+                      padding: EdgeInsets.only(top: 10.h),
                       child: FadeInDown(
                         child: Align(
                           alignment: Alignment.topCenter,

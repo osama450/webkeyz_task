@@ -40,8 +40,8 @@ class ProductDetailsScreen extends StatelessWidget {
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Colors.black38,
-                    Colors.black26,
+                    Colors.black,
+                    Colors.transparent,
                   ],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,

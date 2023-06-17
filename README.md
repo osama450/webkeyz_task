@@ -5,7 +5,24 @@ This is a Flutter project that [provide a brief description of the app's purpose
 
 ## Configuration
 
-Before running the app, make sure you have Flutter SDK installed on your machine. If you haven't installed Flutter yet, please follow the official Flutter installation guide: [Flutter Installation](https://flutter.dev/docs/get-started/install)
+This is a Flutter project that [provide a brief description of the app's purpose or functionality].
+
+## Getting Started
+
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites
+
+Before running the app, make sure you have the following installed:
+
+- Flutter SDK: [Installation Guide](https://flutter.dev/docs/get-started/install)
+- Dart SDK
+- Android Studio / Xcode (for iOS development)
+- Emulator / Physical device for testing
+
+### Installing
+
+Follow the steps below to get the project running on your machine:
 
 1. Clone this repository or download the source code.
 
@@ -36,3 +53,14 @@ We have included unit tests and integration tests for this Flutter project. To r
 3. Run the test.
 
 This will execute all the unit tests in the `test` directory.
+
+
+## Screenshots
+
+Include screenshots of your project here to provide a visual representation of the app's UI.
+
+![Screenshot 1](screenshots/screenshot1.png)
+_Caption for screenshot 1._
+
+![Screenshot 2](screenshots/screenshot2.png)
+_Caption for screenshot 2._
