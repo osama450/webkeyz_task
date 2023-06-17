@@ -3,6 +3,7 @@ import 'dart:isolate';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:webkeyz_task/modules/home/cubit/cubit.dart';
 import 'package:webkeyz_task/shared/cubit/cubit.dart';
 import 'package:webkeyz_task/shared/local/cache_helper.dart';
 import 'package:webkeyz_task/shared/network/cubit/cubit.dart';
@@ -60,6 +61,12 @@ Future<void> init() async {
 
   di.registerFactory<SharedCubit>(
     () => SharedCubit(
+      di<Repository>(),
+    ),
+  );
+
+  di.registerFactory<HomeCubit>(
+    () => HomeCubit(
       di<Repository>(),
     ),
   );

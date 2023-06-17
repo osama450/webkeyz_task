@@ -1,12 +1,16 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:webkeyz_task/models/response/product_model.dart';
 import 'package:webkeyz_task/modules/home/product_details_screen.dart';
 import 'package:webkeyz_task/shared/assets/assets.gen.dart';
 import 'package:webkeyz_task/shared/config/colors.dart';
 
 class PremiumProductComponent extends StatelessWidget {
+  final List<ProductModel> products;
   const PremiumProductComponent({
     super.key,
+    required this.products,
   });
 
   @override
@@ -80,7 +84,7 @@ class PremiumProductComponent extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Text(
-                                'Chocolate Lovers',
+                                products[index].name!,
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15.sp,
@@ -110,7 +114,7 @@ class PremiumProductComponent extends StatelessWidget {
                                 height: 6.h,
                               ),
                               Text(
-                                '20 USD',
+                                products[index].price!,
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15.sp,
@@ -122,25 +126,30 @@ class PremiumProductComponent extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.topCenter,
-                      child: Assets.images.cookie1.image(),
+                    FadeInDown(
+                      child: Align(
+                        alignment: Alignment.topCenter,
+                        child: Image.asset(
+                          products[index].image!,
+                        ),
+                      ),
                     ),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Colors.black,
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>
-                                    const ProductDetailsScreen(),
-                              ),
-                            );
-                          },
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ProductDetailsScreen(
+                              product: products[index],
+                            ),
+                          ),
+                        );
+                      },
+                      child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.black,
                           child: Assets.icons.iconArrow.svg(),
                         ),
                       ),
@@ -154,7 +163,7 @@ class PremiumProductComponent extends StatelessWidget {
                 width: 16.w,
               );
             },
-            itemCount: 3,
+            itemCount: products.length,
           ),
         ),
       ],

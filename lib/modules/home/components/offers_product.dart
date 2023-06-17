@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:webkeyz_task/models/response/product_model.dart';
+import 'package:webkeyz_task/modules/home/product_details_screen.dart';
 import 'package:webkeyz_task/shared/assets/assets.gen.dart';
 import 'package:webkeyz_task/shared/config/colors.dart';
 
 class OffersProductComponent extends StatelessWidget {
+  final List<ProductModel> products;
   const OffersProductComponent({
     super.key,
+    required this.products,
   });
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -76,7 +79,8 @@ class OffersProductComponent extends StatelessWidget {
                               horizontal: 24.w, vertical: 28.h),
                           child: Row(
                             children: [
-                              Assets.images.cookie1.image(
+                              Image.asset(
+                                products[index].image!,
                                 width: 75.w,
                                 height: 75.h,
                               ),
@@ -89,7 +93,7 @@ class OffersProductComponent extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
-                                      'Double Chocolate',
+                                      products[index].name!,
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15.sp,
@@ -122,7 +126,7 @@ class OffersProductComponent extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      '20 USD',
+                                      products[index].discount!,
                                       style: TextStyle(
                                         decoration: TextDecoration.lineThrough,
                                         color: Colors.white.withAlpha(150),
@@ -131,7 +135,7 @@ class OffersProductComponent extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      '12 USD',
+                                      products[index].price!,
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15.sp,
@@ -146,13 +150,22 @@ class OffersProductComponent extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Colors.black,
-                        child: InkWell(
-                          onTap: () {},
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ProductDetailsScreen(
+                              product: products[index],
+                            ),
+                          ),
+                        );
+                      },
+                      child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.black,
                           child: Assets.icons.iconArrow.svg(),
                         ),
                       ),
@@ -166,7 +179,7 @@ class OffersProductComponent extends StatelessWidget {
                 width: 16.w,
               );
             },
-            itemCount: 3,
+            itemCount: products.length,
           ),
         ),
       ],

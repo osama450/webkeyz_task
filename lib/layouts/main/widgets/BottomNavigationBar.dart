@@ -41,13 +41,13 @@ class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100.h,
+      height: 95.h,
       child: Stack(
         children: [
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: 65.h,
+              height: 60.h,
               decoration: const BoxDecoration(
                 color: Colors.black,
                 borderRadius: BorderRadius.only(
@@ -79,8 +79,8 @@ class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
                         child: Column(
                           children: [
                             Container(
-                              height: 64,
-                              width: 64,
+                              height: 60,
+                              width: 60,
                               decoration: const BoxDecoration(
                                 color: AppColors.primaryColor,
                                 shape: BoxShape.circle,

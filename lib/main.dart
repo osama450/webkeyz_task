@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:webkeyz_task/layouts/main/main_screen.dart';
+import 'package:webkeyz_task/modules/home/cubit/cubit.dart';
 import 'package:webkeyz_task/shared/config/theme.dart';
 import 'package:webkeyz_task/shared/cubit/cubit.dart';
 import 'package:webkeyz_task/shared/cubit/states.dart';
@@ -28,6 +29,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<SharedCubit>(
           create: (BuildContext context) => di<SharedCubit>(),
+        ),
+        BlocProvider<HomeCubit>(
+          create: (BuildContext context) => di<HomeCubit>()..getProducts(),
         ),
       ],
       child: BlocBuilder<SharedCubit, SharedStates>(
