@@ -56,5 +56,10 @@ This will execute all the unit tests in the `test` directory.
 Include screenshots of your project here to provide a visual representation of the app's UI.
 
 <img src="screenshots/Screenshot_1687042358.png" width="250"> <img src="screenshots/Screenshot_1687042362.png" width="250">
- 
+
+## Video
+
+https://github.com/osama450/webkeyz_task/assets/71011907/5a1f566e-4654-4fc8-8e5d-6bae9a2b8520
+
+
 
