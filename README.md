@@ -59,7 +59,7 @@ Include screenshots of your project here to provide a visual representation of t
 
 ## Video
 
-<img src=https://github.com/osama450/webkeyz_task/assets/71011907/5a1f566e-4654-4fc8-8e5d-6bae9a2b8520 width="250">
+https://github.com/osama450/webkeyz_task/assets/71011907/5a1f566e-4654-4fc8-8e5d-6bae9a2b8520
 
 
 
