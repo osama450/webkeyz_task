@@ -40,7 +40,7 @@ class ProductDetailsInfoComponent extends StatelessWidget {
             'Cookies',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 80.sp,
+              fontSize: 70.sp,
               fontWeight: FontWeight.w600,
             ),
           ),
